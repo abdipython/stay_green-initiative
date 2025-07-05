@@ -1,7 +1,219 @@
-*{
-    border: 0px;
-    margin: 0px;
-    padding:0px;
-    background: #fefae3;;
-    color:#2B361C ;
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navbar Styling */
+.navbar {
+    position: sticky; /* Sticky Navbar */
+    top: 0;
+    z-index: 1000;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo img {
+    height: 80px; /* Adjust logo size */
+}
+
+.donate-btn {
+    background-color: #68b150; /* Green color for Donate button */
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.donate-btn:hover {
+    background-color: #57a046;
+}
+
+/* Menu Sections */
+.menu-container {
+    display: flex;
+}
+
+.menu {
+    flex: 1;
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.menu h2 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+
+.menu p {
+    font-size: 0.9rem;
+}
+
+/* Individual Menu Colors */
+.mission {
+    background-color: #d32f2f; /* Red */
+}
+
+.events {
+    background-color: #000; /* Black */
+}
+
+.involved {
+    background-color: #388e3c; /* Green */
+}
+
+/* Extra content for scroll */
+.content {
+    height: 1000px;
+    padding: 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 80vh; /* Adjust height */
+    background: url('city.jpg') no-repeat center center/cover; /* Replace with your image */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    color: #fff;
+    padding: 40px;
+    max-width: 500px;
+    margin-left: 30px;
+}
+
+.overlay h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.hero-btn {
+    background-color: #4caf50; /* Green button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.hero-btn:hover {
+    background-color: #43a047;
+}
+
+/* Navigation Links Below Hero */
+.hero-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+.hero-nav .nav-link {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero-nav .nav-link:hover {
+    text-decoration: underline;
+}
+/* Partners Section */
+.partners {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Light background */
+}
+
+.partners h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.partners-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.partners-logos img {
+    max-height: 60px;
+    max-width: 120px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.partners-logos img:hover {
+    opacity: 1;
+}
+/* Footer Styling */
+.footer {
+    background-color: #222; /* Dark footer */
+    color: #fff;
+    padding: 40px 20px 20px;
+    font-size: 0.9rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 20px;
+}
+
+.footer-logo img {
+    height: 50px;
+}
+
+.footer-links a {
+    color: #ccc;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+.footer-social a img {
+    width: 25px;
+    margin: 0 8px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s ease;
+}
+
+.footer-social a img:hover {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 15px;
+    color: #aaa;
 }
